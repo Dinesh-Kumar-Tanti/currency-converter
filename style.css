@@ -19,7 +19,7 @@ body {
     backdrop-filter: blur(10px); /* Blur background */
     border-radius: 20px;
     padding: 40px;
-    width: 400px; /* Larger card */
+    width: 500px; /* Larger card */
     text-align: center;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glassmorphism */
