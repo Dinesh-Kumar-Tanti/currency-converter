@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab); /* Gradient dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Blur background */
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px; /* Larger card */
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border for glassmorphism */
+}
+
+h2 {
+    color: #fff; /* White heading */
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.amount, .from, .to {
+    margin-bottom: 25px;
+}
+
+p {
+    color: #fff; /* White text */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent input background */
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]::placeholder {
+    color: #ddd; /* Light placeholder */
+}
+
+input[type="number"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); /* Darker background on focus */
+    border: 1px solid #fff; /* White border on focus */
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+select {
+    /* width: 185px;
+    text-align: center; */
+    margin-left: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); /* Darker background on focus */
+}
+
+select option {
+    background-color: rgb(130, 128, 128);
+}
+
+button.btn {
+    background: #ff6b6b; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 20px rgba(255, 107, 107, 0.5); /* Button shadow */
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button.btn:hover {
+    background: #ff4757; /* Darker red on hover */
+}
+
+.msg {
+    margin-top: 20px;
+    color: #f9d8db; 
+    font-size: 16px;
+}
+
+#exchange{
+    width: 80px;
+    margin-bottom: 20px;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input[type="number"] {
+        width: 80%;
+    }
+    /* button.btn {
+        width: 100%;
+    } */
+}
