@@ -126,7 +126,7 @@ button.btn:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
-        width: 75%;
+        width: 90%;
     }
 
     h2 {
